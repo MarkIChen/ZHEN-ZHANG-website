@@ -241,7 +241,9 @@ p {
 }
 
 .footer-icon {
-  background: url('imgs/on-fire.gif')
+  background: url('https://github.com/MarkIChen/ZHEN-ZHANG-website/blob/master/public/Imgs/on-fire.gif?raw=true');
+  width: 100px;
+  height: 100px;
 }
 
 @media (max-width: 765px) {
