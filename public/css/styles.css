@@ -43,6 +43,10 @@ section {
   padding: 20px;
 }
 
+.history-intro-content p {
+  color: red;
+}
+
 .round-border {
   border-radius: 15px;
 }
@@ -54,7 +58,6 @@ section {
 .carousel-item img {
   object-fit: cover;
   height: 100%;
-
 }
 
 #history .icon {
@@ -92,6 +95,8 @@ section {
   border: none;
   overflow: hidden;
   height: 400px;
+  border-radius: 15px;
+  box-shadow: 4px 2px 8px black;
 }
 
 .img-div {
@@ -189,12 +194,16 @@ p {
   z-index: 2;
 }
 
+/* #contact .col-md-4 {
+  margin: 10px;
+} */
 #contact h1 {
   color: white;
 }
 
 .map-img {
-  width: 270px;
+  width: auto;
+  height: 367px;
   object-fit: cover;
   position: relative;
   z-index: 1;
@@ -206,16 +215,33 @@ p {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+.standard-margin {
+  padding: 2%;
+}
+
 .find-us-button {
   position: absolute;
   z-index: 3;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 15px;
+  bottom: 40px;
 }
 
 .theme-color-red {
   color: #FF8781;
+}
+
+.theme-background-color-red {
+  background-color: #FF6C6C;
+  border: none;
+}
+
+.theme-background-color-red:hover {
+  background-color: #BA2323;
+}
+
+.footer-icon {
+  background: url('imgs/on-fire.gif')
 }
 
 @media (max-width: 765px) {
@@ -225,6 +251,13 @@ p {
 
   #history img {
     display: none;
+  }
+
+  #history {
+    background-image: url('https://github.com/MarkIChen/ZHEN-ZHANG-website/blob/master/public/Imgs/welding.jpg?raw=true');
+    -webkit-backdrop-filter: blur(100px);
+
+
   }
 
   #landing-page .intro-block {
@@ -238,7 +271,9 @@ p {
   #technique {
     height: 1400px;
   }
+}
 
+@media (max-width: 1097px) {
   #contact {
     height: 900px;
   }
