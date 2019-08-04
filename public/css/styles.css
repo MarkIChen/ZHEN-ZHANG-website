@@ -26,7 +26,15 @@ section {
   position: relative;
   z-index: 0;
 }
+/* Landing page */
 
+#landing-page .carousel-inner .carousel-item {
+  height: 600px;
+}
+
+#landing-page .carousel-inner .intro-block {
+  background-image: linear-gradient(rgba(208, 208, 208, 0.3), rgba(93, 93, 93, 0.3));
+}
 .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF8781' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
 }
@@ -34,6 +42,43 @@ section {
 .carousel-control-next-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF8781' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
+
+/* Service */
+.service-content {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 80%;
+  height: 70%;
+  margin: auto;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.ver-line {
+  background-color: #FF6C6C;
+  width: 5px;
+  height: 30px;
+  /* display: inline-block; */
+  position: absolute;
+}
+
+.ver-line-text {
+  padding-left: 20px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* Product Carousel */
+.product-carousel {
+  height: 500px;
+}
+#product .container {
+  margin-top: 10px;
+}
+#product .col-3{
+  margin: 5px;
+}
+
+/* History */
 
 .history-intro-content {
   height: 350px;
@@ -44,7 +89,14 @@ section {
 }
 
 .history-intro-content p {
-  color: red;
+  padding-top: 20%;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.history-intro-content p::first-letter {
+  color: #FF6C6C;
+  font-size: 2rem;
 }
 
 .round-border {
@@ -76,15 +128,9 @@ section {
   opacity: 0.9;
 }
 
-.carousel-inner .carousel-item {
-  height: 600px;
-}
 
-.carousel-inner .intro-block {
-  background-image: linear-gradient(rgba(208, 208, 208, 0.3), rgba(93, 93, 93, 0.3));
-}
 
-.container {
+#technique .container {
   /* height: 100%; */
   margin-top: 4%;
   overflow: hidden;
@@ -140,7 +186,7 @@ section {
 
 #technique {
   background: linear-gradient(-130deg, #777777 60%, #886565 60%);
-  ;
+
 }
 
 .center-align {
@@ -215,7 +261,7 @@ p {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.standard-margin {
+.standard-padding {
   padding: 2%;
 }
 
@@ -248,15 +294,19 @@ p {
 
 @media (max-width: 765px) {
   .grid {
-    padding: 0;
+    padding: 2%;
   }
 
   .navbar {
-    padding: 0;
+    padding: 2%;
   }
 
   #landing-page {
     height: 800px;
+  }
+
+  #product {
+    height: 1000px;
   }
 
   #history img {
@@ -320,12 +370,6 @@ p {
   overflow: hidden;
 }
 
-.ver-line {
-  background-color: red;
-  width: 5px;
-  height: 25px;
-  display: inline-block;
-}
 
 .overlay-content-block p {
   display: inline-block;

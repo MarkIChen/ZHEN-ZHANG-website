@@ -6,6 +6,7 @@
   <title>震璋高週波熱處理公司</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/product-carousel.css">
   <!-- javascript -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -32,13 +33,19 @@
           <a class="nav-link" href="#landing-page">簡介</a>
         </li>
         <li class="nav-item active ">
-          <a class="nav-link" href="#technique">技術</a>
+          <a class="nav-link" href="#service">加工項目</a>
+        </li>
+        <li class="nav-item active ">
+          <a class="nav-link" href="#product">產品</a>
+        </li>
+        <li class="nav-item active ">
+          <a class="nav-link" href="#technique">設備</a>
+        </li>
+        <li class="nav-item active ">
+          <a class="nav-link" href="#history">成立歷史</a>
         </li>
         <li class="nav-item active ">
           <a class="nav-link" href="#contact">聯絡我們</a>
-        </li>
-        <li class="nav-item active ">
-          <a class="nav-link" href="#">下載</a>
         </li>
       </ul>
     </div>
@@ -87,32 +94,63 @@
 
   </section>
 
-  <!-- History -->
-  <section class="" id="history">
+  <!-- Service -->
+  <section class="grid center-align " id="service">
+    <h1 class="them theme-color-red">服務項目</h1>
+    <div class="service-content standard-padding round-border">
+      <!-- <div class="overlay-content-block round-border"> -->
+      <div class="ver-line"></div>
+      <p class="ver-line-text">加熱方式： 高週波、中週波等表面熱處理</p>
+      <hr>
+      <div class="ver-line"></div>
+      <p class="ver-line-text">工件類別： 軸心、齒輪、車輪、滾輪、螺桿、模具、軌道等</p>
+      <hr>
+      <div class="ver-line"></div>
+      <p class="ver-line-text">汽機車、機械零件處理</p>
+      <hr>
+      <div class="ver-line"></div>
+      <p class="ver-line-text">金屬正常化、退火熱處理</p>
+      <hr>
+      <div class="ver-line"></div>
+      <p class="ver-line-text">金屬表面磁性探傷檢驗</p>
+      <!-- </div> -->
+    </div>
+  </section>
 
-    <div class="grid">
-
-      <div class="container">
-        <div class="row justify-content-md-center">
-          <div class="col-md-6">
-
-            <h1 class="theme-color-red">Since 1980</h1>
-            <div class="history-intro-content round-border">
-
-              <p>This company found</p>
-            </div>
+  <!-- product -->
+  <section class="product-carousel center-align" id="product">
+    <h1 class="them theme-color-red">產品藝廊</h1>
+    <div class="container text-center my-3">
+      <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+        <div class="carousel-inner w-100" role="listbox">
+          <div class="carousel-item row no-gutters active">
+            <div class="col-md-4 float-left"><img class="img-fluid" src="http://placehold.it/350x280/222/fff?text=1"></div>
+            <div class="col-md-4 float-left"><img class="img-fluid" src="http://placehold.it/350x280/444?text=2"></div>
+            <div class="col-md-4 float-left"><img class="img-fluid" src="http://placehold.it/350x280/888?text=3"></div>
           </div>
-          <div class="col-md-6">
-            <img class="round-border" src="https://github.com/MarkIChen/ZHEN-ZHANG-website/blob/master/public/Imgs/welding.jpg?raw=true" alt="">
+          <div class="carousel-item row no-gutters">
+            <div class="col-md-4 float-left"><img class="img-fluid" src="http://placehold.it/350x280/555?text=6"></div>
+            <div class="col-md-4 float-left"><img class="img-fluid" src="http://placehold.it/350x280/333/fff?text=7"></div>
+            <div class="col-md-4 float-left"><img class="img-fluid" src="http://placehold.it/350x280/bbb?text=8"></div>
           </div>
         </div>
+        <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
+
+
     </div>
   </section>
   <!-- technique -->
   <section class="grid center-align" id="technique">
 
-    <h1>技術</h1>
+    <h1>設備</h1>
     <div class="container">
       <div id="overlay" onclick="off()">
         <div class="overlay-content-block round-border">
@@ -138,7 +176,7 @@
             </div>
             <div class="card-body">
               <h5 class="card-title">高週波</h5>
-              <p class="card-text">contents</p>
+              <p class="card-text">共 7台</p>
             </div>
           </div>
         </div>
@@ -152,7 +190,7 @@
             </div>
             <div class="card-body">
               <h5 class="card-title">中週波</h5>
-              <p class="card-text">contents</p>
+              <p class="card-text">共 1台</p>
             </div>
           </div>
         </div>
@@ -166,7 +204,7 @@
             </div>
             <div class="card-body">
               <h5 class="card-title">回火爐</h5>
-              <p class="card-text">contents</p>
+              <p class="card-text">共 2台</p>
             </div>
           </div>
         </div>
@@ -177,6 +215,29 @@
 
   </section>
 
+  <section class="" id="history">
+
+    <div class="grid">
+
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-md-6">
+
+            <h1 class="theme-color-red">Since 1989</h1>
+            <div class="history-intro-content round-border">
+
+              <p>創立於民國78年，廠房面積200坪，致力於高週波、中週波表面硬化處理。對加熱冷卻技術有深入了解和研究，和豐富的經驗保證優良的品質。專業的送貨團隊，為南臺灣建立完整表面熱處理加工體系。</p>
+
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="round-border" src="https://github.com/MarkIChen/ZHEN-ZHANG-website/blob/master/public/Imgs/welding.jpg?raw=true" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class=" center-align" id="contact">
 
     <div class="kao-bg"> </div>
@@ -185,11 +246,11 @@
 
       <div class="container">
         <div class="row justify-content-md-center">
-          <div class="col-lg-4 standard-margin">
+          <div class="col-lg-4 standard-padding">
             <button class="find-us-button btn btn-dark" type="button" name="button">Find Us</button>
             <img class="round-border map-img" src="https://github.com/MarkIChen/ZHEN-ZHANG-website/blob/master/public/Imgs/map.png?raw=true" class="card-img-top" alt="">
           </div>
-          <div class="info col-lg-8 standard-margin">
+          <div class="info col-lg-8 standard-padding">
             <div class="round-border info-div">
 
             </div>
